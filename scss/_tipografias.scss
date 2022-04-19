@@ -1,0 +1,189 @@
+$orange: #fc8813;
+$white: white;
+$cafe: #4B3306;
+$beige: #D7B474;
+$negro: black;
+$gris: #e6e1e5;
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.img-fluid {
+  &.mw {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+//Tamaños de tipografías
+.puntos {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: $cafe;
+  position: relative;
+  top: 23px;
+
+  &:after,
+  &:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: $cafe;
+    position: absolute;
+  }
+
+  &:after {
+    top: -16px;
+  }
+  &:before {
+    top: 16px;
+  }
+}
+.title {
+  font-family: rose;
+  font-size: 3.5rem;
+  line-height: 60px;
+  color: white;
+  &.black{
+    color:  $negro;
+  }
+  &.cafe {
+    color: $cafe;
+  }
+  &.beige {
+    color: $beige;
+  }
+  &.gris {
+    color: $gris;
+  }
+
+  &.v2 {
+    font-size: 7rem;
+    //line-height: 60px;
+  }
+  &.v3{
+    font-size: 15rem;
+  }
+  &.pt {
+    padding-top: 5px;
+  }
+
+  &.txt-stroke {
+    color: transparent;
+
+    &.white {
+      -webkit-text-stroke: 1px white;
+    }
+    &.orange {
+      -webkit-text-stroke: 1px $orange;
+    }
+  }
+}
+
+.paragraph {
+  font-family: donut;
+  color: $cafe;
+  font-size: 2rem;
+  line-height: 23px;
+
+  &.black {
+    color: black;
+  }
+  &.orange {
+    color: $orange;
+  }
+  &.white {
+    color: $white !important;
+  }
+  &.beige {
+    color: $beige !important;
+  }
+  &.cafe {
+    color: $cafe !important;
+  }
+
+  &.v2 {
+    font-size: 1.8rem;
+  }
+  &.v3 {
+    font-size: 3rem;
+  }
+
+  b,
+  strong {
+    font-family: donut;
+    font-weight: normal;
+  }
+}
+
+.ancla {
+  font-family: donut;
+  font-size: 3rem;
+
+  &.cafe {
+    color: $cafe;
+  }
+  &.hright {
+    margin-left: 2%;
+  }
+}
+.button {
+  color: $white;
+  background: $cafe;
+  padding: 1rem 8rem;
+  border-radius: 40px;
+  font-family: donut;
+  font-size: large;
+  display: block;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 $cafe;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+
+  &:hover {
+    box-shadow: inset 0 -70px 0 0 $white;
+    color: $cafe;
+  }
+}
+figure.sombra {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    right: -15px;
+    bottom: 15px;
+    z-index: -1;
+    background-color: $cafe;
+  }
+}
+
+@font-face {
+  font-family: donut;
+  src: url("../fonts/Asdonuts.ttf");
+}
+
+@font-face {
+  font-family: rose;
+  src: url("../fonts/RoseCake.otf");
+}
+
+
+
+.donut {
+  font-family: donut !important;
+}
+
+.rose {
+  font-family: rose !important;
+}

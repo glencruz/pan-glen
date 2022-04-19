@@ -1,0 +1,3 @@
+En el archivo config que esta dentro de la carpeta admin esta la condiguracion de la ruta del proyecto...
+La configuración del envio de correo se encuentra en el archivo enviar.php 
+El script de la bd es ejercicio.sql
